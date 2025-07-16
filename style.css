@@ -1,0 +1,583 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 13vh;
+  background: rgba(0, 0, 0, 0.911);
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* BOX1 */
+.nav-logo {
+  height:6vh;
+  width: 8vw;
+  margin-left:0.5vw;
+}
+.logo {
+  height:5vh;
+  width:7vw;
+  background-image: url(img/amazonlogo.png);
+  background-size: cover;
+}
+.border {
+  border: 1.5px solid transparent;
+}
+.border:hover {
+  border: 1.5px solid white;
+  border-radius: 5px;
+}
+/* BOX2 */
+.icon-container {
+  height: 4vh;
+  width: 3vw;
+}
+.icon {
+  padding-left: 1.25vw;
+  font-size: clamp(0.5rem,1.25vw,1.5rem);
+  font-weight: bold;
+}
+/* BOX3 */
+.nav-address {
+  height: 8vh;
+  width: 8vw;
+  padding-left: 1vw;
+  box-sizing: border-box;
+}
+.first {
+  font-weight: 500;
+  font-size: clamp(0.5rem,1vw,1rem);
+}
+.second {
+  font-weight: bold;
+  font-size: clamp(0.5rem,1vw,1rem);
+}
+/* BOX4 */
+.search-panel {
+  height: 7vh;
+  width: 40vw;
+  display: flex;
+  border-radius: 4px;
+  justify-content: space-evenly;
+  background-color: blue;
+}
+.search-panel:hover {
+  border: 1.5px solid orangered;
+  border-radius: 4px;
+}
+.search-drop {
+  width: 3vw;
+  height: 7vh;
+  color: #0f1111;
+  text-align: center;
+}
+.drop-down {
+  width: 3vw;
+  height: 7vh;
+  background-color: #f3f3f3;
+  color: #0f1111;
+  text-align: center;
+  font-size:clamp(0.5rem,1vw,1.5rem);
+  border-radius: 4px;
+  border: none;
+}
+.search {
+  width: 100%;
+  font-size:clamp(0.5rem,1vw,1.5rem);
+}
+.search-input {
+  width: 100%;
+  height: 98%;
+  font-size: clamp(0.5rem,1vw,1.5rem);
+  border-radius: 4px;
+  border: none;
+}
+.searchicon-container {
+  width: 3vw;
+  background-color: #fedb68;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: clamp(0.5rem,1vw,1.5rem);
+  color: #0f1111;
+}
+/* Box 5 */
+.language-selection {
+  width: 3.5vw;
+  height: 6vh;
+  color: black;
+  box-sizing: border-box;
+}
+.select-language {
+  margin-left: 0.25vw;
+  font-size: clamp(0.25rem,1vw,1.5rem);
+  margin-top: 0.5vh;
+}
+/* Box 6 */
+.account {
+  width: 8.5vw;
+  border-radius: 4px;
+}
+.first {
+  font-size: clamp(0.5rem,1vw,1.5rem);
+  margin-left: 0.5vw;
+}
+.second {
+  font-size: clamp(0.5rem,1vw,1.5rem);
+  font-weight: 800;
+  margin-left: 0.6vw;
+}
+/* Box 7 */
+.nav-order {
+  width: 5.25vw;
+  border-radius: 4px;
+}
+#return {
+  font-size: clamp(0.5rem,1vw,1.5rem);
+}
+#order {
+  font-size: clamp(0.5rem,1vw,1.5rem);
+  font-weight: 800;
+  margin-left: 0.25vw;
+}
+.nav-cart {
+  width: 3vw;
+  height: 7vh;
+  font-size: clamp(0.5rem,1vw,1.5rem);
+  margin-right: 0.5vw;
+  border-radius: 4px;
+}
+.nav-cart span {
+  padding-top: 1vh;
+  margin: 1.5vh;
+  margin-left: 0.5vw;
+}
+/* Panel */
+.panel {
+  height: 8vh;
+  background-color: #0f1111;
+  color: azure;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.panel span{
+  font-size: clamp(0.5rem,1.2vw,1.5rem);
+}
+.panel-link {
+  text-decoration: none;
+  color: azure;
+  font-size:clamp(0.5rem,1.2vw,1.5rem);
+}
+/* Hero Section */
+.hero-section {
+  height: 60vh;
+  width: 100%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroimg-container {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  background-image: url(img/ama\ bg.jpg);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.hero-msg {
+  height: 8vh;
+  margin-top: 55vh;
+  font-size: clamp(0.5rem,1.2vw,1.5rem);
+}
+.hero-section a {
+  text-decoration: none;
+  color: blue;
+  font-size: clamp(0.5rem,1.2vw,1.5rem);
+}
+.hero-msg a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+/* Shop Section */
+.shop-section {
+  height: 100vh;
+  background: #e7e5e5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.box {
+  width: 23vw;
+  height: 45vh;
+  background-color: white;
+  text-align: center;
+  position: relative;
+}
+.box span {
+  font-weight: bold;
+  font-size: clamp(1rem,2vw,3rem);
+}
+.box a {
+  text-decoration: none;
+  color: rgb(23, 155, 243);
+  padding-bottom: 1vh;
+}
+.box a:hover {
+  text-decoration: underline;
+  color: rgb(23, 155, 243);
+}
+.gamepad {
+  width: 17vw;
+  height: 32vh;
+  background-image: url(img/gamepad.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.tv {
+  width: 17vw;
+  height: 32vh;
+  background-image: url(img/tv.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.watch {
+   width: 17vw;
+  height: 32vh;
+  background-image: url(img/watch.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.microwave {
+   width: 17vw;
+  height: 32vh;
+  background-image: url(img/microwave.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.fridge {
+   width: 17vw;
+  height: 32vh;
+  background-image: url(img/fridge.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cleaning {
+  width: 17vw;
+  height: 32vh;
+  background-image: url(img/Cleaning\ supplies.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.mouse {
+  width: 17vw;
+  height: 32vh;
+  background-image: url(img/mouse.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.ps5 {
+  width: 17vw;
+  height: 32vh;
+  background-image: url(img/ps5\ slim\ disc\ edition.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* shop-section2 */
+.shop-section2 {
+  height: 25vh;
+  box-sizing: border-box;
+  background: #fdfdfd;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.img1 {
+  width: 23vw;
+  height: 25vh;
+  background-image: url(img/keyboard2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.img2 {
+  width: 23vw;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(img/gamepad.jpg);
+}
+.img3 {
+  width: 30vw;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(img/tv.jpg);
+}
+.img4 {
+  width:17vw;
+  height:25vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(img/watch.jpg);
+}
+.img5 {
+  width: 17vw;
+  height: 25vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(img/mouse.jpg);
+}
+/* group-shop */
+.group-shop {
+  height:60vh;
+  margin-top: 1vh;
+  background: #b9b6b6;
+  display: flex;
+  justify-content: space-around;
+}
+.group-shop1{
+  width:23vw;
+  height: 59vh;
+  background-color: #fdfdfd;
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.shop{
+  width: 10vw;
+  height: 20vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.shop a{
+  text-decoration:none;
+  color: rgb(9, 9, 233);
+  margin-bottom: 3vh;
+  font-size: clamp(0.5rem,1vw,1.5rem);
+}
+.shop1{
+  background-image: url(img/gamepad.jpg);
+}
+.shop2{
+ 
+  background-image: url(img/ps5\ dualsense\ wireless\ controller.jpg);
+}
+.shop3{
+ 
+  background-image: url(img/ps5\ slim\ disc\ edition.jpg);
+}
+.shop4{
+  
+  background-image: url(img/ps5\ slim\ fornite\ digital\ edition.jpg);
+}
+.group-shop1 p{
+  text-align: center;
+  font-size: clamp(1.5rem,2.40vw,3rem);
+  font-weight: 800;
+}
+.group-shop2{
+  width:23vw;
+  height: 59vh;
+  background-color: #fdfdfd;
+  margin-top: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.shop-2-1{
+  background-image: url(img/home\ tools.jpg);
+}
+.shop-2-2{
+  background-image: url(img/homme\ storage.jpg);
+}
+.shop-2-3{
+  background-image: url(img/microwave.jpg);
+}
+.shop-2-4{
+  background-image: url(img/fridge.jpg);
+}
+.group-shop2 p{
+  text-align: center;
+  font-size: clamp(1.5rem,2.40vw,3rem);
+  font-weight: 800;
+}
+
+.group-shop3{
+  width:23vw;
+  height: 59vh;
+  background-color: #fdfdfd;
+  margin-top: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.shop-3-1{
+  background-image: url(img/keyboard2.jpg);
+}
+.shop-3-2{
+  background-image: url(img/kgjke.jpg);
+}
+.shop-3-3{
+  background-image: url(img/mouse.jpg);
+}
+.shop-3-4{
+  background-image: url(img/ps5\ slim\ disc\ edition.jpg);
+}
+.group-shop3 p{
+  text-align: center;
+  font-size: clamp(1.5rem,2.25vw,3rem);
+  font-weight: 800;
+}
+.group-shop4{
+ width:23vw;
+  height: 59vh;
+  background-color: #fdfdfd;
+  margin-top:1vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.shop-4-1{
+  background-image: url(img/lightning\ solutions.jpg);
+}
+.shop-4-2{
+  background-image: url(img/images.jpg);
+}
+.shop-4-3{
+  background-image: url(img/bathtoom.jpg);
+}
+.shop-4-4{
+  background-image: url(img/homme\ storage.jpg);
+}
+.group-shop4 p{
+  text-align: center;
+ font-size: clamp(1.5rem,2.25vw,3rem);
+  font-weight: 800;
+}
+/* Footer-section */
+/* foot-box1 */
+.foot-box1{
+  height: 7vh;
+  background: #242222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f0eaea;
+}
+.foot-box1 a{
+  color:#f0eaea ;
+  text-decoration:none;
+  font-size: clamp(0.5rem,1.25vw,1.5rem);
+}
+/* foot-box2 */
+.foot-box2{
+  height:60vh;
+  background: #1b1b1b;
+  color: #f0eaea;
+  display: flex;
+  justify-content: space-evenly;
+}
+.foot-box2 p{
+  font-size:clamp(0.25rem,1vw,1.25rem);
+  font-weight: 600;
+}
+.foot-box{
+  text-decoration: none;
+  display: block;
+  color: #f0eaea;
+font-size:clamp(0.25rem,1vw,1.25rem);
+  margin-top: 1vh;
+}
+  .foot-box2 a:hover{
+  text-decoration: underline;
+}
+/* foot-box3 */
+  .foot-box3{
+    height: 35vh;
+  background: #0a0a0a;
+    color:#f0eaea ;
+  display: flex;
+  justify-content: space-evenly;
+}
+  .foot-box-3-1{
+    width:5vw;
+  font-size:clamp(0.25rem,1vw,1.25rem);
+}
+  .panelops{
+  margin-top: 0.5vh;
+}
+  .foot-box3 a:hover{
+  text-decoration: underline;
+}
+  .foot-box-3-2{
+    width:8vw;
+  font-size:clamp(0.25rem,1vw,1.25rem);
+}
+  .foot-box-3-2 a{
+    margin-top: 1.5vh;
+}
+  .foot-box-3-3{
+    width: 6vw;
+  font-size: clamp(0.5rem,1vw,1.25rem);
+}
+  .foot-box-3-3 a{
+    margin-top: 1.5vh;
+}
+  .foot-box-3-4{
+   width: 8vw;
+  font-size: clamp(0.5rem,1vw,1.25rem);
+}
+  .foot-box-3-4 a{
+    margin-top: 1.5vh;
+}
+  .copy{
+  width: 100%;
+  height: 8vh;
+  background: #0a0a0a;
+  color: #f0eaea;
+}
+  .copy-container{
+    width:100%;
+    height: 5vh;
+  flex-wrap: wrap;
+  font-size: clamp(0.5rem,1vw,1.25rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .copy a{
+  display: inline;
+  color: #f0eaea;
+  text-decoration: none;
+  width:5vw;
+  margin: 1.5vh;
+}
+  .copy a:hover{
+  text-decoration: underline;
+}
+  .copy span{
+  display: block;
+}
+.copy-container2{
+  height: 3vh;
+  display: flex;
+   font-size: clamp(0.5rem,1vw,1.25rem);
+  justify-content: center;
+  align-items: center;
+}
